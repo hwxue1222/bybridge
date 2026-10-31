@@ -57,12 +57,20 @@ export function SiteShell({ active, eyebrow, title, intro, children }: Props) {
             ))}
           </nav>
 
-          <Link
-            href="/contact"
-            className="inline-flex rounded-full bg-slate-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-800"
-          >
-            Talk to Us
-          </Link>
+          <div className="flex items-center gap-3">
+            <a
+              href="mailto:service@bybridge.com.sg"
+              className="hidden text-sm font-medium text-slate-600 transition hover:text-slate-950 sm:inline-flex"
+            >
+              service@bybridge.com.sg
+            </a>
+            <Link
+              href="/contact"
+              className="inline-flex rounded-full bg-slate-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-slate-800"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -83,8 +91,8 @@ export function SiteShell({ active, eyebrow, title, intro, children }: Props) {
           <div>
             <div className="text-lg font-semibold text-slate-950">Bybridge Consultancy Pte Ltd</div>
             <p className="mt-4 max-w-md text-sm leading-7 text-slate-600">
-              Corporate support for company setup, secretarial compliance, statutory updates and practical coordination
-              for businesses operating in Singapore.
+              Professional support for Singapore company incorporation, corporate secretary services, statutory
+              compliance and ongoing corporate administration.
             </p>
           </div>
           <div>

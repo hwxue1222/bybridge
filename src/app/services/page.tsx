@@ -28,14 +28,14 @@ export default function ServicesPage() {
     <SiteShell
       active="services"
       eyebrow="Services"
-      title="Core service categories for the first public release."
-      intro="These sections are based on the service types already visible in your existing business system, so the website and your actual operations stay aligned."
+      title="Corporate services structured around real client needs."
+      intro="The services below reflect the core corporate work Bybridge handles, presented in a format that feels more aligned with a professional Singapore business services website."
     >
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <SectionHeading
           eyebrow="Service Overview"
-          title="A service menu that already fits your real workflows."
-          body="Later, each service block can become its own detailed landing page with process notes, FAQs and calls to action."
+          title="A clearer overview of incorporation and secretarial support."
+          body="These categories are shaped around the service scope already reflected in your operations, including incorporation, corporate secretary work and governance-related changes."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
@@ -56,9 +56,9 @@ export default function ServicesPage() {
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
           <SectionHeading
-            eyebrow="Next Expansion"
-            title="Ready for service detail pages."
-            body="Once you send reference links or preferred copy, I can expand each block into more persuasive sections such as process, timeline, required documents and contact CTA."
+            eyebrow="Selected Matters"
+            title="Typical corporate matters supported by the team."
+            body="Examples include change of director, transfer of shares, change of company secretary, AGM-related matters and RORC-related support, depending on the company requirement."
           />
         </div>
       </section>

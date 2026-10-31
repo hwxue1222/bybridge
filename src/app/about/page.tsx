@@ -2,16 +2,16 @@ import { SectionHeading, SiteShell } from '@/components/marketing/SiteShell';
 
 const principles = [
   {
-    title: 'Practical Execution',
-    body: 'Keep the process understandable, reduce back-and-forth and move corporate tasks forward with clear documentation.',
+    title: 'Professional Coordination',
+    body: 'Handle corporate work through a more organized process, from information gathering to execution support and follow-up.',
   },
   {
-    title: 'Responsive Communication',
-    body: 'Make it easier for clients to know what is needed, what is pending and what happens next.',
+    title: 'Clear Communication',
+    body: 'Give clients clearer visibility on required documents, next actions and filing progress.',
   },
   {
     title: 'Long-Term Support',
-    body: 'Go beyond single filings and help clients stay organized across recurring corporate requirements.',
+    body: 'Support clients not only on one-off matters, but also across recurring compliance and corporate maintenance needs.',
   },
 ];
 
@@ -24,8 +24,8 @@ export default function AboutPage() {
     <SiteShell
       active="about"
       eyebrow="About Bybridge"
-      title="A stronger company profile for your relaunch."
-      intro="This page is designed to carry your official positioning, company background and trust signals in a cleaner, more premium way."
+      title="Corporate services support with a clearer business profile."
+      intro="Bybridge Consultancy Pte Ltd serves businesses that require support on Singapore company setup, company secretary matters and recurring statutory corporate updates."
     >
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
@@ -33,7 +33,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Who We Are"
               title="Bybridge Consultancy Pte Ltd"
-              body="Bybridge supports companies that need help with incorporation, ongoing secretarial support and corporate updates in Singapore. This first version uses your known company details as a foundation for the new public-facing site."
+              body="Bybridge supports companies that need assistance with incorporation, corporate secretary services and important governance-related changes. The positioning emphasizes professionalism, responsiveness and a more structured client experience."
             />
           </div>
           <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-sm">
@@ -42,7 +42,7 @@ export default function AboutPage() {
               <p>Registered business presence in Singapore.</p>
               <p>Office at 8 Burn Road #15-03, Trivex, Singapore 369977.</p>
               <p>Main contact at service@bybridge.com.sg and +65 6221 5600.</p>
-              <p>Standalone website project prepared for cleaner deployment to a new server.</p>
+              <p>Service scope aligned with incorporation, secretarial support and corporate changes.</p>
             </div>
           </div>
         </div>
@@ -50,9 +50,9 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <SectionHeading
-          eyebrow="Working Style"
-          title="How the new website positions your brand."
-          body="Instead of looking like a login gateway, the domain can now explain your value, services and contact path with proper corporate credibility."
+          eyebrow="Approach"
+          title="A more professional way to present how Bybridge works."
+          body="The company profile is strengthened when the website clearly communicates service scope, responsiveness and the ability to support recurring corporate requirements."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {principles.map((item) => (

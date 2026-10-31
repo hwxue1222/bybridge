@@ -16,16 +16,16 @@ export default function ContactPage() {
     <SiteShell
       active="contact"
       eyebrow="Contact"
-      title="A cleaner contact page for your new server deployment."
-      intro="This page is ready to become your main public enquiry path. It can later connect to email forms, WhatsApp buttons, CRM capture or booking flows."
+      title="Contact Bybridge Consultancy Pte Ltd."
+      intro="Get in touch regarding company incorporation, corporate secretary services or specific statutory corporate matters in Singapore."
     >
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <SectionHeading
               eyebrow="Get In Touch"
-              title="Current business contact details"
-              body="These values are taken from the company information already present in your existing records and templates."
+              title="Business contact details"
+              body="Use the contact information below for new enquiries, ongoing company matters or questions about Bybridge service scope."
             />
             <div className="mt-8 space-y-4">
               {contactRows.map((row) => (
@@ -38,12 +38,12 @@ export default function ContactPage() {
           </div>
 
           <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-300">Server Relaunch Notes</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight">This independent project is ready for deployment setup.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-300">Enquiry Focus</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight">How this contact page should work for clients.</h2>
             <div className="mt-6 space-y-4 text-sm leading-7 text-slate-300">
-              <p>You can deploy this project separately from `gos`, then point `www.bybridge.com.sg` to the new server.</p>
-              <p>After you send reference websites, I can continue refining visuals, sections and conversion elements.</p>
-              <p>If needed, I can also help add a contact form, WhatsApp entry or server deployment config next.</p>
+              <p>Enquiries can cover company incorporation, company secretary support, shareholder changes or general corporate maintenance matters.</p>
+              <p>The page is designed to keep the contact path simple, credible and suitable for a professional services firm.</p>
+              <p>A later step can add a formal enquiry form, WhatsApp access or direct consultation booking.</p>
             </div>
           </div>
         </div>

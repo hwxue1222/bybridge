@@ -17,10 +17,26 @@ const serviceCards = [
   },
 ];
 
-const strengths = [
-  'Singapore-based support with bilingual business communication',
-  'Practical handling of recurring corporate secretarial work',
-  'Clearer client handoff from enquiry to execution and follow-up',
+const differentiators = [
+  {
+    title: 'Singapore Corporate Focus',
+    body: 'Support centered on incorporation, secretarial compliance and statutory corporate matters in Singapore.',
+  },
+  {
+    title: 'Clear Process Coordination',
+    body: 'Structured guidance from initial enquiry through document collection, filing support and follow-up.',
+  },
+  {
+    title: 'Responsive Communication',
+    body: 'Practical updates and business-friendly communication for founders, shareholders and operating teams.',
+  },
+];
+
+const processSteps = [
+  'Initial consultation to understand your company stage, structure and immediate filing needs.',
+  'Document and information collection with clearer coordination on required items.',
+  'Execution support for incorporation, secretary work or corporate changes.',
+  'Ongoing follow-up for compliance, record maintenance and future updates.',
 ];
 
 export default function HomePage() {
@@ -28,26 +44,26 @@ export default function HomePage() {
     <SiteShell
       active="home"
       eyebrow="Singapore Corporate Services"
-      title="A proper public website for Bybridge."
-      intro="This new standalone project repositions Bybridge as a polished corporate website, with room to present your company profile, core services and contact path more clearly."
+      title="Professional corporate services support for businesses in Singapore."
+      intro="Bybridge Consultancy Pte Ltd supports businesses with incorporation, corporate secretary services and key statutory updates, with a focus on clear coordination, responsive communication and practical follow-through."
     >
       <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-[2rem] bg-slate-950 px-8 py-10 text-white sm:px-10">
-          <p className="text-sm uppercase tracking-[0.25em] text-slate-300">What Bybridge Does</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Support businesses across setup, compliance and corporate updates.</h2>
+          <p className="text-sm uppercase tracking-[0.25em] text-slate-300">What We Do</p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Incorporation, secretarial support and corporate changes handled with more clarity.</h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">
-            The first version focuses on a clean, high-end corporate presentation. It gives the domain a confident
-            front door while keeping enough structure to expand once you send final copy, photos or reference sites.
+            We help businesses establish and maintain their Singapore corporate structure with practical support across
+            filings, records, shareholder matters and recurring compliance requirements.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/services" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-950">
-              Explore Services
+              View Services
             </Link>
             <Link
               href="/contact"
               className="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
             >
-              Contact Bybridge
+              Speak With Us
             </Link>
           </div>
         </div>
@@ -55,17 +71,17 @@ export default function HomePage() {
         <div className="grid gap-4 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:grid-cols-2">
           <div className="rounded-3xl bg-slate-50 p-6">
             <div className="text-4xl font-semibold text-slate-950">2015</div>
-            <p className="mt-3 text-sm leading-7 text-slate-600">Bybridge company information already points to a long-standing Singapore entity.</p>
+            <p className="mt-3 text-sm leading-7 text-slate-600">Established Singapore corporate presence reflected in existing company and invoicing records.</p>
           </div>
           <div className="rounded-3xl bg-slate-50 p-6">
-            <div className="text-4xl font-semibold text-slate-950">SG</div>
-            <p className="mt-3 text-sm leading-7 text-slate-600">Local office address, service email and phone details are already reflected in your existing records.</p>
+            <div className="text-4xl font-semibold text-slate-950">SGD</div>
+            <p className="mt-3 text-sm leading-7 text-slate-600">Singapore office contact details and service channels already align with the business information in use.</p>
           </div>
           <div className="rounded-3xl bg-slate-50 p-6 sm:col-span-2">
-            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">Relaunch Direction</div>
+            <div className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">Core Scope</div>
             <p className="mt-3 text-sm leading-7 text-slate-600">
-              The website is now isolated from `gos`, so future server, deployment and design work can happen without
-              touching the business portal.
+              Company incorporation, corporate secretary services, change of director, share transfer, AGM-related
+              work and RORC-related support.
             </p>
           </div>
         </div>
@@ -74,8 +90,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <SectionHeading
           eyebrow="Core Services"
-          title="A sharper way to explain what your team handles."
-          body="This structure gives Bybridge a concise service overview now, and it is easy to expand into detailed service pages later."
+          title="Core business services presented in a more professional structure."
+          body="The site now reflects the main categories of corporate work clients typically need when setting up or maintaining a Singapore company."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {serviceCards.map((item) => (
@@ -92,27 +108,57 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Why Bybridge"
-              title="Built for companies that want clear responses and organized follow-through."
+              title="A more credible presentation for a professional services firm."
             />
           </div>
-          <div className="space-y-4">
-            {strengths.map((item) => (
-              <div key={item} className="rounded-3xl bg-slate-50 px-5 py-4 text-sm leading-7 text-slate-600">
-                {item}
+          <div className="grid gap-4">
+            {differentiators.map((item) => (
+              <div key={item.title} className="rounded-3xl bg-slate-50 px-5 py-4">
+                <div className="text-base font-semibold text-slate-950">{item.title}</div>
+                <div className="mt-2 text-sm leading-7 text-slate-600">{item.body}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-6 pb-20">
+        <SectionHeading
+          eyebrow="How We Work"
+          title="A simple engagement flow clients can understand quickly."
+          body="Professional services websites feel stronger when visitors can immediately see the path from enquiry to execution."
+        />
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {processSteps.map((item, index) => (
+            <div key={item} className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="text-sm font-semibold uppercase tracking-[0.24em] text-teal-700">Step {index + 1}</div>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {item}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="rounded-[2rem] bg-teal-800 px-8 py-10 text-white sm:px-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-teal-100">Next Step</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Send me your reference websites and I will restyle this first version further.</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-teal-100">Contact</p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Discuss your incorporation or corporate secretary requirements with Bybridge.</h2>
           <p className="mt-4 max-w-2xl text-base leading-8 text-teal-50">
-            The current build gives you the standalone project and the public-facing page structure. The next pass can
-            focus on visual direction, messaging polish and deployment to your new server.
+            Reach out for support on company setup, recurring compliance matters or specific corporate changes that
+            require structured execution and follow-up.
           </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/contact" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-950">
+              Contact Details
+            </Link>
+            <a
+              href="mailto:service@bybridge.com.sg"
+              className="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+            >
+              service@bybridge.com.sg
+            </a>
+          </div>
         </div>
       </section>
     </SiteShell>
